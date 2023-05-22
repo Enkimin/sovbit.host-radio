@@ -4,23 +4,37 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Home</title>
+    <title>Sovbit Radio</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Home.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Enki">
-    <script type="application/ld+json">{
+    <script type="application/ld+json">
+    {
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "Sovbit Radio",
 		"url": "/"
-}</script>
+    }
+    </script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Sovbit Radio">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="https://radio.sovbit.host">
+    <script>
+      // Add your code here
+      async function getPublicKey() {
+          const publicKey = await window.nostr.getPublicKey();
+          console.log(publicKey);
+      }
+
+      async function signEvent(event) {
+          const signedEvent = await window.nostr.signEvent(event);
+          console.log(signedEvent);
+      }
+  </script>
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-home-page="https://radio.sovbit.host" data-home-page-title="Sovbit Radio" class="u-body u-overlap u-overlap-contrast u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-sticky u-header" id="sec-c8af"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <deepl-inline-translate style="z-index: 1999999999;"></deepl-inline-translate>
