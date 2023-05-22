@@ -66,6 +66,19 @@
           <div class="u-align-left u-container-style u-grey-80 u-tab-pane u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
             <div class="u-container-layout u-container-layout-2">
               <deepl-inline-translate style="z-index: 1999999999;"></deepl-inline-translate>
+              <script>
+                import NostrChatWidget from 'nostr-chat-widget-react';
+              
+                const recipientPk = '44dc1c2db9c3fbd7bee9257eceb52be3cf8c40baf7b63f46e56b58a131c74f0b';
+                const relayUrls = ['wss://no.str.cr', 'wss://relay.damus.io', 'wss://nostr.fly.dev', 'wss://nostr.robotechy.com'];
+              
+                // Render the NostrChatWidget component
+                const chatWidget = new NostrChatWidget({
+                  recipientPk: recipientPk,
+                  relayUrls: relayUrls
+                });
+                chatWidget.render(document.getElementById('chat')); // Replace 'chat' with the ID of the container element for the chat tab
+              </script>
             </div>
           </div>
           <div class="u-container-style u-grey-80 u-tab-pane u-tab-pane-3" id="tab-d836" role="tabpanel" aria-labelledby="link-tab-d836">
